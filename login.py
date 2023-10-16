@@ -1,4 +1,4 @@
-#import all necessary libraries
+#imports all necessary libraries
 import sqlite3
 from cryptography.fernet import Fernet
 import pandas as pd
@@ -25,7 +25,7 @@ def create_table():
     [lastname] TEXT)''')
 
 
-#creates an account, if the username is not already taken, stores #all the parameters in the database, and notifies the user of the #successful account creation
+#creates an account, if the #username is not already taken, #stores all the parameters in #the database, and notifies the #user of the #successful #account creation
 def create_acc(username, password, firstname, lastname):
     c.execute('''SELECT username FROM tank_database WHERE username = ?''', (username,))
     existing_user = c.fetchone()

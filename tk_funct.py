@@ -1,4 +1,4 @@
-#import all of the necessary libraries
+#imports all of the necessary libraries
 from tkinter import *
 from login import *
 

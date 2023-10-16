@@ -1,4 +1,4 @@
-#import all of the necessary libraries
+#imports all of the necessary libraries
 from login import *
 from tk_funct import *
 
